@@ -1,0 +1,20 @@
+<h3 align="center">Liste des users!</h3>
+
+
+<ul>
+    <li *ngFor='let user of utilisateurs'> {{user.name}}</li>
+  </ul>
+
+
+  <table>
+    <tr>
+        <th>ID</th><th>NAME</th><th>EMAIL</th><th>ADDRESSS</th>
+    </tr>
+    <tr *ngFor="let user of utilisateurs">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.address.street}}</td>
+
+    </tr>
+  </table>
